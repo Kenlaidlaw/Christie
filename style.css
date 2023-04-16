@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,14 +7,14 @@
 }
 
 :root {
-  --primary-color: #fff;
-  --secondary-color: #000;
-  --tertiary-color: #cd7f32;
-  --fourth-color: #534532;
+  --primary-color: #0050b5;
+  --secondary-color: #042349;
+  --tertiary-color: #6381a7;
+  --fourth-color: #262e38;
 }
 
 body {
-  font-family: "Open Sans", "sans-serif";
+  font-family: "Mulish", sans-serif;
   color: var(--secondary-color);
 }
 
@@ -26,10 +26,7 @@ body {
 /* NAVIGATION */
 .nav {
   position: fixed;
-  background: url(/images/xi7pRz.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: var(--primary-color);
   top: 0;
   left: 0;
   right: 0;
@@ -37,7 +34,7 @@ body {
   z-index: 20;
 }
 
-.nav .container .logo a {
+.nav .container .logo {
   font-size: 32px;
   padding: 7px 0;
 }
@@ -57,8 +54,9 @@ body {
   justify-content: center;
 }
 
-.nav a {
-  color: var(--primary-color);
+.nav a,
+.logo {
+  color: #fff;
   font-size: 1.4rem;
   text-decoration: none;
   padding: 7px 0 7px 40px;
@@ -69,16 +67,16 @@ body {
 }
 
 .nav.active a {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .nav.active .container {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .nav a.current,
 .nav a:hover {
-  color: var(--fourth-color);
+  color: var(--tertiary-color);
   font-weight: bold;
 }
 
@@ -86,7 +84,7 @@ body {
 
 .hero {
   background-image: url("/images/Picture11.jpg");
-  height: 75vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -124,8 +122,8 @@ body {
 
 /* Main ABOUT section */
 h3 {
-  color: var(--tertiary-color);
-  margin: 16px 0;
+  color: var(--primary-color);
+  margin: 32px 0 16px 0;
   font-size: 24px;
 }
 
@@ -151,7 +149,7 @@ p,
 }
 
 .experience-list strong {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 20px;
 }
 
@@ -164,24 +162,23 @@ p,
 
 .photo-container {
   width: 50%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  z-index: 10;
+
   padding-left: 32px;
 }
 
 .photo-container .photo {
-  width: 90%;
+  width: 120%;
   height: auto;
   margin: 0 auto;
   padding: 10px;
   position: relative;
 }
 
-.photo-container .shape1 {
+/* .photo-container .shape1 {
   position: absolute;
   top: 20px;
   left: 50px;
@@ -198,11 +195,11 @@ p,
   height: 150px;
   width: 150px;
   background-color: #df9e5e;
-}
+} */
 
 /* Gallery section */
 .gallery strong {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 20px;
   padding-bottom: 16px;
 }
@@ -210,7 +207,7 @@ p,
 .carousel {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   height: 680px;
-  width: 500px;
+  width: 1200px;
   overflow: hidden;
   margin: 16px auto;
   position: relative;
@@ -224,8 +221,8 @@ p,
 }
 
 .slider-img {
-  width: 400px;
-  height: auto;
+  max-width: 1000px;
+  max-height: 600px;
   object-fit: cover;
   margin: auto;
 }
@@ -239,7 +236,7 @@ p,
 }
 
 .btn {
-  background-color: #df9e5e;
+  background-color: var(--tertiary-color);
   color: #fff;
   border: none;
   padding: 0.5rem;
@@ -261,24 +258,17 @@ p,
 }
 
 .contact-image {
-  background: url(/images/xi7pRz.webp);
+  background: url(/images/Picture5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 50%;
-}
-
-.contact-image img {
-  width: 100%;
 }
 
 .contact-form {
-  background: url(/images/xi7pRz.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: var(--primary-color);
   width: 50%;
-  color: var(--primary-color);
+  color: #fff;
   padding: 16px;
 }
 
@@ -290,6 +280,7 @@ p,
 .contact-form p {
   font-size: 1rem;
   padding-bottom: 8px;
+  color: #fff;
 }
 
 .form-eye {
@@ -320,20 +311,21 @@ p,
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: yellow;
+  border: 2px solid #6381a7;
 }
 
 .contact-form textarea {
   height: 100px;
 }
 
+.contact-form button {
+  border: 1px solid #fff;
+}
+
 /* footer section */
 footer {
-  background: url(/images/xi7pRz.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: #fff;
   font-weight: bolder;
   font-size: 20px;
   padding: 2rem;
@@ -345,6 +337,11 @@ footer {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+}
+
+.footer-left p,
+.footer-right p {
+  color: #fff;
 }
 
 .footer-mid i {
