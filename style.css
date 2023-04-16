@@ -19,8 +19,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
+  padding: 0 100px;
 }
 
 /* NAVIGATION */
@@ -32,6 +33,7 @@ body {
   right: 0;
   transition: all 0.3s ease-in-out;
   z-index: 20;
+  padding: 0 100px;
 }
 
 .nav .container .logo {
@@ -207,7 +209,7 @@ p,
 .carousel {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   height: 680px;
-  width: 1200px;
+  max-width: 1400px;
   overflow: hidden;
   margin: 16px auto;
   position: relative;
