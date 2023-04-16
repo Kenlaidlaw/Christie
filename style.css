@@ -125,7 +125,7 @@ body {
 /* Main ABOUT section */
 h3 {
   color: var(--primary-color);
-  margin: 32px 0 16px 0;
+  padding: 12px 0;
   font-size: 24px;
 }
 
@@ -134,7 +134,6 @@ p,
   color: var(--fourth-color);
   line-height: 24px;
   letter-spacing: 1.2px;
-  padding-top: 8px;
 }
 
 .skills-training {
