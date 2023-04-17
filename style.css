@@ -10,7 +10,7 @@
   --primary-color: #0050b5;
   --secondary-color: #042349;
   --tertiary-color: #6381a7;
-  --fourth-color: #262e38;
+  --fourth-color: #4c4e52;
 }
 
 html {
@@ -31,7 +31,7 @@ body {
 /* NAVIGATION */
 .nav {
   position: fixed;
-  background-color: var(--primary-color);
+  background-color: var(--fourth-color);
   top: 0;
   left: 0;
   right: 0;
@@ -308,7 +308,7 @@ p,
 
 /* footer section */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--fourth-color);
   color: #fff;
   font-weight: bolder;
   font-size: 20px;
